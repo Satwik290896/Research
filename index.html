@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Droppable - Default functionality</title>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- bootstrap same as before -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <style>
+.container {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.title  {
+    background-color: rgb(184, 185, 187);
+    text-align: left;
+    display: block;
+    font-size: 200%;
+    font-weight: bold;
+    padding: 50px 0px 50px 20px
+}
+.menu {
+    background-color: rgb(128, 154, 206);
+    text-align: center;
+    display: block;
+    font-size: 100%;
+    font-weight: normal;
+    padding: 20px 0px 20px 20px
+}
+.text {
+    color:black;
+    font-weight: bold
+}
+.text2 {
+    color:black;
+    font-weight: normal;
+    font-size: 25%;
+    color: rgb(122, 121, 121)
+}
+.no-gutters2 {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0%;
+    padding-left: 0;
+    padding-top: 2%;
+}
+.block2  {
+          width: 100%;
+          display: block;
+          text-align: center;
+      }
+#droppable_list1 {
+          border: 2px solid rgb(120, 140, 228);
+          background-color: rgb(120, 140, 228);
+          border-radius: 0px;
+          padding: 7% 50% 7% 7%;
+          font-weight: bold;
+      }
+.draggable {
+          border: 1px solid black;
+          background-color: white;
+          border-radius: 0px;
+          text-align:start;
+          z-index:9999;
+}
+.draggable2 {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 0px;
+    text-align:start;
+    cursor:move;
+}
+.draggable2:hover {
+    background-color: lightyellow;
+  }
+#droppable_list2 {                
+          border: 2px solid rgb(120, 140, 228);
+          background-color: rgb(120, 140, 228);
+          border-radius: 0px;
+          padding: 7% 50% 7% 7%;
+          font-weight: bold;
+        }
+.darker {
+        background-color: rgb(91, 113, 212);
+}
+.darkest {
+    background-color: rgb(7, 46, 221);
+}
+.ui-draggable-dragging {
+            z-index:99999;
+        }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">
+        <div>Sai Satwik Vaddi</div>
+        <div class="text2">Welcome to my Personal Page. I try to keep the page updated.</div>
+        <div class="text2">Thanks for showing up and Happy Reading!! </div>
+        <!--<div class="text2">()</div>-->
+    </div>
+    <div class="menu">
+    <div class="row">
+        <div class="col-md-2 col-sm-2">
+            <a href="https://satwik290896.github.io/Introduction" class="text">Introduction</a>
+        </div>
+        <div class="col-md-2 col-sm-2">
+            <a href="https://satwik290896.github.io/Education/" class="text">Education</a>
+        </div>
+        <div class="col-md-3 col-sm-3">
+            <a href="https://satwik290896.github.io/ProfessionalExperience" class="text">Professional-Experience</a>
+        </div>
+        <div class="col-md-2 col-sm-2">
+            <a href="https://satwik290896.github.io/Projects" class="text">Projects</a>
+        </div>
+        <div class="col-md-1 col-sm-2">
+            <a href="https://satwik290896.github.io/Research" class="text">Research</a>
+        </div>       
+        <div class="col-md-2 col-sm-1">
+            <a href="https://satwik290896.github.io/Entrepreneurial" class="text">Entrepreneurial</a>
+        </div>  
+        <!--<div class="col-md-1">
+        </div> -->          
+    </div>
+    </div>
+    <br/>
+    <ul style="list-style-type:square">
+    <li>
+        <h3>Medium Dense Cellular(MDC) Network </h3>
+        <h5>Research Development; Creator - IIT Madras</h5>
+        <div>Achievements:</div>
+        <ul style="list-style-type:square">
+            <li>Researched & Designed a concept of Cellular Network for better rural connectivity & business activities, known as Medium Dense Cellular(MDC) Network. The concept of Boundary Contiguity is applied to design MDC Network.</li>
+            <li>Examined & Modelled Coverage Area for the MDC Network using PPP & Sparse Dictionary Learning Techniques. Personally supervised and penned the Paper(15 page)</li>
+            <li>The Paper gained resepect among Professots and is believed to open a new branch of Cellular Networks. Paper is aimed to publich in Springer in 2022</li>
+            <li> <a href="https://drive.google.com/file/d/1XYK0qYqFBJJvVxfpBvfFnC675t8t3TeX/view?usp=sharing">Paper Link</a></li>
+        </ul>
+    </li>
+    <br/>
+    <li>
+        <h3>Dynamic frame-slotted ALOHA for IoT: Design and analysis</h3>
+        <h5>Research Development; Creator - IIT Madras </h5>
+        <div>Achievements:</div>
+        <ul style="list-style-type:square">
+            <li>Research Contributions to the Journal "Multi-packet reception dynamic frame-slotted ALOHA for IoT: Design and analysis"</li>
+            <li>The Paper takes a cue from the MDC Network Research work</li>
+            <li><a href="https://www.sciencedirect.com/science/article/pii/S2542660520300913">Check Out Competetion URL</a></li>
+        </ul>
+    </li>
+    <br/>
+    <li>
+        <h3>Resarch Surveys (BlockChain, Networks)</h3>
+        <h5>Research</h5>
+        <div>Achievements:</div>
+        <ul style="list-style-type:square">
+            <li>Involved in Multiple other Research Surveys: Example being - In a Blockchain, we studied extensively about Privacy coins and made a Survey from it</li>
+        </ul>
+    </li>
+    </ul>
+    <br/>
+    <br/>
+    </div>
+</body>
+</html>
